@@ -20,19 +20,9 @@
 	<body>
 		<div class="container">
 			<!--NAV BAR-->
-			<header>
-				<nav class="menu">
-					<a href="./index.html">
-						<h1>Comercial Don Chucho</h1>
-					</a>
-					<ul>
-						<li><a href="./users.php">Buy</a></li>
-						<li><a href="./stock.php">Stock</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+			<?php
+				require('./components/header.php');
+			?>
 
 			<br>
 

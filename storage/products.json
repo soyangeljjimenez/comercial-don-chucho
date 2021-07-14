@@ -2,36 +2,50 @@
 	{
 		"product": "Arroz",
 		"presentation": "1kg",
-		"price": 2500
+		"price": 2500,
+		"iva": 300,
+		"total": 2800
 	},
 	{
 		"product": "Pasta",
 		"presentation": "1kg",
-		"price": 3500
+		"price": 3500,
+		"iva": 420,
+		"total": 3920
 	},
 	{
 		"product": "Azucar",
 		"presentation": "1kg",
-		"price": 3000
+		"price": 3000,
+		"iva": 360,
+		"total": 3360
 	},
 	{
 		"product": "Harina",
 		"presentation": "1kg",
-		"price": 3000
+		"price": 3000,
+		"iva": 360,
+		"total": 3360
 	},
 	{
 		"product": "Aceite",
 		"presentation": "1Lt",
-		"price": 4000
+		"price": 4000,
+		"iva": 480,
+		"total": 4480
 	},
 	{
 		"product": "Huevo",
 		"presentation": "12u",
-		"price": 6000
+		"price": 6000,
+		"iva": 720,
+		"total": 6720
 	},
 	{
 		"product": "Leche",
 		"presentation": "1kg",
-		"price": 12000
+		"price": 12000,
+		"iva": 1440,
+		"total": 13440
 	}
 ]

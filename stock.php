@@ -20,24 +20,26 @@
 	<body>
 		<div class="container">
 			<!--NAV BAR-->
-			<nav class="menu">
-				<ul>
-					<li><a href="./index.html">Comercial Don Chucho</a></li>			<!--OJO Logo Aqui-->
-					<li><a href="./users.php">Buy</a></li>
-					<li><a href="./stock.php">Stock</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
+			<header>
+				<nav class="menu">
+					<a href="./index.html">
+						<h1>Comercial Don Chucho</h1>
+					</a>
+					<ul>
+						<li><a href="./users.php">Buy</a></li>
+						<li><a href="./stock.php">Stock</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-			<div>
-				<table border="2">
+			<br>
+
+			<div class="cont">
+				<table>
 					<tbody>
-						<tr>
-							<th>Producto</th>
-							<th>Presentacion</th>
-							<th>Costo</th>
-						</tr>
+						<tr><th>Producto</th>	<th>Presentación</th>	<th>Costo sin I.V.A</th>	<th>I.V.A</th>	<th>Costo Total</th></tr>
 						<?php
 							$productsSTR = file_get_contents('./storage/products.json');
 							$productsPHP = json_decode($productsSTR, true);

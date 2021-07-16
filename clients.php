@@ -1,54 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--showing the header since hml until div.container-->
+<?php include('./components/header.php'); ?>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<title>Comercial Don Chucho | Welcome</title>
-		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
-	</head>
-
-	<body>
-		<div class="container">
-			<!--NAV BAR-->
-			<?php
-				require('./components/header.php');
-
-			?>
-
-			<br>
-
-			<div class="cont">
-				
-				<div class="card">
-					<a href="./components/register.php">
-						<div class="card-img">
-							<img src="./static/img/children.jpg" id="img-children">
-						</div>
-						<div class="card-body">
-							<p>Registrar Usuario</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="card">
-					<a href="#">
-						<div class="card-img">
-							<img src="./static/img/finger.jpg" id="img-finger">
-						</div>
-						<div class="card-body">
-							<p>Ingresar Usuario</p>
-						</div>
-					</a>
-				</div>
-
+<div class="container p-4">
+	<div class="row">
+		<div class="col">
+			<img src="./static/img/children.jpg" class="card-img">
+			<div class="card card-title">
+				<h1><a href="./components/register.php">Registrar Usuario</a></h1>
 			</div>
-		</div>	
+		</div>
+		<div class="col">
+			<img src="./static/img/finger.jpg" class="card-img">
+			<div class="card card-title">
+				<h1><a href="./users.php">Mostrar Usuarios</a></h1>
+			</div>
+		</div>
+	</div>
+</div>
 
-		<!--FOOTER-->
-		<footer>
-			
-		</footer>
-	</body>
-
-</html>
+<!--showing the footer since close div.container until close html-->
+<?php include('./components/footer.php'); ?>

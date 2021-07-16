@@ -1,56 +1,33 @@
-<!--
-	Republica Bolivariana de Venezuela
-	Ministerio del Poder Popular para Educacion Universitaria
-	Universidad Bolivariana de Venezuela
-	P.F.G. Informatica para la Gestion Social - 3er semestre
-	Unidad Curricular: Laboratorio de Aplicaciones Web - Profesora: Marisela Alvarez
-	Estudiante: Angel J. Jimenez C. V-26921917
-	Archivo: stock.php
--->
-<!DOCTYPE html>
-<html lang="en">
+<!--showing the header since hml until div.container-->
+<?php include('./components/header.php'); ?>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<title>Comercial Don Chucho | Stock</title>
-		<link rel="stylesheet" type="text/css" href="./static/css/style.css">
-	</head>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Producto</th>
+			<th>Presentación</th>
+			<th>Costo sin I.V.A</th>
+			<th>Ultimo Añadido</th>
+		</tr>
+	</thead>
 
-	<body>
-		<div class="container">
-			<!--NAV BAR-->
-			<?php
-				require('./components/header.php');
-			?>
+	<tbody>
 
-			<br>
+		<?php
+			$query_products="SELECT * FROM products";
+			$result_products= mysqli_query($conn, $query_products);
 
-			<div class="cont">
-				<table>
-					<tbody>
-						<tr><th>Producto</th>	<th>Presentación</th>	<th>Costo sin I.V.A</th>	<th>I.V.A</th>	<th>Costo Total</th></tr>
-						<?php
-							$productsSTR = file_get_contents('./storage/products.json');
-							$productsPHP = json_decode($productsSTR, true);
+			while ($row_products=mysqli_fetch_array($result_products)) {
+		?>
+				<tr>
+					<td><?php echo $row_products['name_product'] ?></td>
+					<td><?php echo $row_products['presentation'] ?></td>
+					<td><?php echo $row_products['price'] ?></td>
+					<td><?php echo $row_products['last_added'] ?></td>
+				</tr>
+		<?php } ?>
 
-							foreach ($productsPHP as $products => $value) {
-								echo "<tr>";
-								foreach ($value as $key => $valor) {
-									echo "<td>$valor</td>";
-								}
-								echo "</tr>";
-							}
-						?>
-					</tbody>
-				</table>
-			</div>
-		</div>	
-
-		<!--FOOTER-->
-		<footer>
-			
-		</footer>
-	</body>
-
-</html>
+	</tbody>
+</table>
+<!--showing the footer since close div.container until close html-->
+<?php include('./components/footer.php'); ?>

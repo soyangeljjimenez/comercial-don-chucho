@@ -1,7 +1,8 @@
-* { padding: 0; margin: 0; }
+* { padding: 0; margin: 0; font-family: Century Schoolbook ;}
 
 html { scroll-behavior: smooth; }
 
+/*
 body div.container { background-color: #f1f1f1;	display: block;	width: 100%; height: 100vh;	text-align: center;}
 
 body div.container header { width: 100%; height: 50px; }
@@ -28,3 +29,7 @@ body div.container div.cont div.card div.card-img img{ width: 350px; height: 200
 
 body div.container div.cont div.card div.card-body { height: 150px; }
 body div.container div.cont div.card div.card-body p { font-size: 45px; background-color: transparent; padding: 5px; text-decoration: none; margin: 0px 0px; }
+
+*/
+body div.container div.connok { display: block; text-align: center; background-color: #1e6; color: #fff;  width: 100%; padding: 8px; }
+body div.container div.connerr { display: block; text-align: center; background-color: #a22; color: #fff; width: 100%; padding: 8px; }

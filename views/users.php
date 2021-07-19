@@ -1,6 +1,3 @@
-<!--showing the header since hml until div.container-->
-<?php include('./components/header.php'); ?>
-
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -31,6 +28,3 @@
 
 	</tbody>
 </table>
-
-<!--showing the footer since close div.container until close html-->
-<?php include('./components/footer.php'); ?>

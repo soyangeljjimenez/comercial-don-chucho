@@ -1,35 +1,94 @@
-* { padding: 0; margin: 0; font-family: Century Schoolbook ;}
+* { padding: 0; margin: 0; font-family: Century Gothic ;}
 
 html { scroll-behavior: smooth; }
 
-/*
-body div.container { background-color: #f1f1f1;	display: block;	width: 100%; height: 100vh;	text-align: center;}
+body div.container {
+	background-color: #f1f1f1;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 
-body div.container header { width: 100%; height: 50px; }
-body div.container header h1 { font-size: 35px; margin: 0px 0px; margin-left: 35px; color: #007bff; background-color: transparent; border-bottom: 2px solid transparent; text-shadow: 3px 3px 3px rgba(10,10,10,.5); font-weight: 500; }
-body div.container header h1:hover { color: #0056b3; }
+body div.container header {
+	width: 100%;
+	text-align: center;
+}
 
-body div.container header nav.menu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+body div.container header h1 {
+	display: inline-block;
+}
 
-body div.container header nav.menu ul { display: flex;	flex-wrap: wrap; justify-content: space-around;	padding:0px 35px; }
-body div.container header nav.menu ul li { height: 100%; font-weight: 500; font-size: 20px; margin: 0px 10px; color: #e5e7e9; border-bottom: 2px solid transparent; text-shadow: 3px 3px 3px rgba(10,10,10,.5); }
-body div.container header nav.menu ul li a { text-decoration: none;	color: #007bff;	background-color: transparent; }
-body div.container header nav.menu ul li a:hover { color: #0056b3; }
+body div.container header nav.menu ul {
+	display: block;
+	text-align: center;
+}
+body div.container header nav.menu ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 25px;
+	padding: 5px 30px;
+	margin: 20px 10px -10px 10px;
+}
 
-body div.container div.cont { display: flex; width: 90%; background-color: #e1e1e1; margin: auto; padding: 10px; }
+body div.container div.card-container {
+	display: block;
+	text-align: center;
+	padding: 30px;
+}
 
-body div.container div.cont table { display: flex; margin-left: auto; margin-right: auto; margin-top: 50px; }
-body div.container div.cont table tbody tr { font-size: 25px; height: 40px; }
-body div.container div.cont table tbody th { font-size: 30px; }
-body div.container div.cont table tbody td { width: 15rem; }
+.d-none {
+	display: none;
+}
 
-body div.container div.cont div.card { display: inline-block; margin-left: auto; margin-right: auto; margin-top: 50px; }
+body div.container div.card-container div.card {
+	display: inline-block;
+	width: 350px;
+	height: auto;
+	box-shadow: 0 4px 8px 0;
+	margin: 40px;
+}
 
-body div.container div.cont div.card div.card-img img{ width: 350px; height: 200px; }
+body div.container div.card-container div.card a {
+	display: block;
+}
 
-body div.container div.cont div.card div.card-body { height: 150px; }
-body div.container div.cont div.card div.card-body p { font-size: 45px; background-color: transparent; padding: 5px; text-decoration: none; margin: 0px 0px; }
+body div.container div.card-container div.card div#form {
+	display: block;
+}
 
-*/
-body div.container div.connok { display: block; text-align: center; background-color: #1e6; color: #fff;  width: 100%; padding: 8px; }
-body div.container div.connerr { display: block; text-align: center; background-color: #a22; color: #fff; width: 100%; padding: 8px; }
+body div.container div.card-container div.card div#form button {
+	width: 60%;
+	padding: 10px;
+	font-size: 15px
+	margin:auto;
+	background-color: #ae1;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+	font-size: 30px;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+div.card div#form form div.form-group input {
+	display: block;
+	font-size: 15px;
+	padding: 10px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 5px;
+	color: #495057;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+}
+
+body div.container div.card-container div.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-style: none;
+}

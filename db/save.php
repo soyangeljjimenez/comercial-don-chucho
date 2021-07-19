@@ -21,7 +21,7 @@
 		$_SESSION['message'] = 'Task Saved Successfully';
 		$_SESSION['message_type'] = 'success';
 		
-		header('Location: ./clients.php');
+		header('Location: ../views/clients.php');
 	}else if (isset($_POST['register_products'])) {
 		$name_product=$_POST['name_product'];
 		$presentation=$_POST['presentation'];
@@ -37,6 +37,6 @@
 			exit("Query Failed");
 		}
 
-		header('Location: ./clients.php');
+		header('Location: ../views/clients.php');
 	}
 ?>
